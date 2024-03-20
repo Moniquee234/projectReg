@@ -1,174 +1,289 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: #000c0a;   
+body {
+  background-color: #000c0a;
 }
 
-nav{
-    border: 2px;
-    padding-block: .8rem;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 15px;
-    max-width: 800px;
-    margin: auto;
+nav {
+  border: 2px;
+  padding-block: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+  max-width: 800px;
+  margin: auto;
 }
 
-nav>a{
-    text-decoration: none;
-    text-transform: capitalize;
-    color: #fff;
-    font-size: 13px;
+nav > a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 13px;
 }
 
-nav>a:first-child{
-    font-weight: 600;
-    color: #106854;
-    margin-top: 9px;
-    padding-bottom:.5rem;
-    border-bottom: 2px;
+nav > a:first-child {
+  font-weight: 600;
+  color: #106854;
+  margin-top: 9px;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px;
 }
 
-nav>button{
-    background-color: #27e1b6;
-    border: none;
-    padding: .4rem 1rem;
-    color: #fff;
-    border-radius: 9px;
-    text-transform: capitalize;
-    font-size: 10px;
+nav > button {
+  background-color: #27e1b6;
+  border: none;
+  padding: 0.4rem 1rem;
+  color: #fff;
+  border-radius: 9px;
+  text-transform: capitalize;
+  font-size: 10px;
 }
 
-.banner{
-    max-width: 800px;
-    color: #dddfdf;
-    margin: 3rem auto;
-    display: flex;
-    justify-content: space-between;
-}
-.bannerContent{
-    width: 43%;
-
-}
-.bannerContent>h1{
-    text-transform:uppercase ;
-    font-size: 2.3rem;
-    width: 450px;
-}
-.bannerContent>h1>span{
-    color: #27e1b6;
-}
-.bannerContent>p{
-    font-size: 12px;
-    color: #27e1b6;
-    margin-block: .5rem;
+.genLayout {
+  max-width: 800px;
+  margin: 3rem auto;
 }
 
-.bannerContent>button{
-    background-color: #27e1b6;
-    padding: .3rem 1.2rem;
-    border: none;
-    border-radius: 8px;
-    color: #fff;
-    text-transform: capitalize;
+.banner {
+  color: #dddfdf;
+  display: flex;
+  justify-content: space-between;
+}
+.bannerContent {
+  width: 43%;
+}
+.bannerContent > h1 {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  width: 450px;
+}
+.bannerContent > h1 > span {
+  color: #27e1b6;
+}
+.bannerContent > p {
+  font-size: 12px;
+  color: #8b9190;
+  margin-block: 0.5rem;
 }
 
-form{
-    width: 250px;
-    padding: 2rem;
-    border: 1px solid gray;
-    background-color: #ffffff05;
-    border-radius: 15px;
-
-}
-.btn{
-    display: flex;
-    gap: 5px;
+.bannerContent > button {
+  background-color: #27e1b6;
+  padding: 0.3rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  text-transform: capitalize;
 }
 
-.btn>button{
-    border-radius: 2px;
-    font-size: 10px;
-    font-weight: 600;
-    border: none;
-    text-transform: capitalize;
-    color: #fff;
-    padding: .3rem 2.6rem;
-    background-color: #27e1b6;
+form {
+  width: 250px;
+  padding: 2rem;
+  border: 1px solid gray;
+  background-color: #ffffff05;
+  border-radius: 15px;
+}
+.btn {
+  display: flex;
+  gap: 5px;
 }
 
-.inputBox{
-    margin-top: 1rem;
+.btn > button {
+  border-radius: 2px;
+  font-size: 10px;
+  font-weight: 600;
+  border: none;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 0.3rem 2.6rem;
+  background-color: #27e1b6;
 }
 
-.inputBox>label{
-    margin-bottom: 5px;
-    font-size: 10px;
-    gap: 3px;
-    text-transform: capitalize;
-    display: flex;
-    align-items: center;
+.inputBox {
+  margin-top: 1rem;
 }
 
-.fa-asterisk{
-    font-size: 5px;
-    color: #27e1b6;
+.inputBox > label {
+  margin-bottom: 5px;
+  font-size: 10px;
+  gap: 3px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
 }
 
-.inputBox>select{
-    background-color: transparent;
+.fa-asterisk {
+  font-size: 5px;
+  color: #27e1b6;
+}
+
+.inputBox > select {
+  background-color: transparent;
+  width: 100%;
+  border-radius: 7px;
+  padding: 0.4rem;
+  color: #fff;
+  font-size: 8px;
+  text-transform: capitalize;
+}
+
+.innerInputBox {
+  display: flex;
+}
+
+.innerInputBox > input {
+  border: 1px solid grey;
+  width: 100%;
+  background-color: transparent;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  padding: 0.4rem;
+  color: #fff;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+.innerInputBox > input::placeholder {
+  font-size: 8px;
+  font-weight: 600;
+  padding-left: 7px;
+}
+.innerInputBox > select {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  font-size: 7px;
+  text-transform: uppercase;
+  padding: 0.2rem;
+  background-color: #27e1b6;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+form > button {
+  background-color: #27e1b6;
+  width: 100%;
+  margin-block: 1rem;
+  padding: 0.4rem;
+  border-radius: 7px;
+  border: none;
+  color: #fff;
+  font-size: 10px;
+  font: weight 600px;
+  text-transform: capitalize;
+}
+.secOne {
+  background-color: #011916;
+}
+
+.investLayout {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.investContent {
+  width: 50%;
+}
+
+.investContent > h1 {
+  font-size: 25px;
+}
+
+.investContent > p {
+  font-size: 14px;
+}
+
+.money {
+  display: flex;
+  gap: 10px;
+}
+.money > img {
+  width: 8%;
+  padding-bottom: 1rem;
+}
+
+.moneyText > span {
+  font-size: 12px;
+}
+
+.moneyImg {
+  width: 30%;
+}
+
+.moneyImg > img {
+  width: 100%;
+}
+.secTwo {
+  background-color: #000c0a;
+  color: #fff;
+}
+
+#services > h1 {
+  text-align: center;
+  color: #27e1b6;
+}
+
+.serviceOption {
+  margin-block: 1rem;
+  display: flex;
+  gap: 25px;
+}
+
+.serviceCard > img {
+  width: 60px;
+}
+.innServiceCard {
+  padding-left: 0.2rem;
+  border-left: 2px solid #27e1b6;
+}
+
+.innerServiceCard > h5 {
+  text-transform: capitalize;
+}
+
+.innerServiceCard > p {
+  font-size: 11px;
+  line-height: 15px;
+}
+
+@media (min-width: 360px) and (max-width: 460px) {
+  nav {
+    justify-content: center;
+  }
+
+  .banner{
+    width: 330px;
+    gap: 40px;
+    flex-direction: column;
+  }
+  .bannerContent {
     width: 100%;
-    border-radius: 7px;
-    padding: .4rem;
-    color: #fff;
-    font-size: 8px;
-    text-transform: capitalize;
-}
-
-.innerInputBox{
-display: flex;
-}
-
-.innerInputBox>input{
-    border: 1px solid grey;
+  }
+  .bannerContent > h1 {
     width: 100%;
-    background-color: transparent;
-    border-top-left-radius:7px;
-    border-bottom-left-radius:7px;
-    padding: .4rem;
-    color: #fff;
-    font-size: 10px;
-    text-transform: capitalize;
-}
-.innerInputBox>input::placeholder{
-    font-size: 8px;
-    font-weight: 600;
-    padding-left: 7px;
-}
-.innerInputBox>select{
-    border-top-right-radius:7px;
-    border-bottom-right-radius:7px;
-    font-size: 7px;
-    text-transform: uppercase;
-    padding: .2rem;
-    background-color: #27e1b6;
-    color:#fff;
-    text-transform: uppercase;
-}
-
-form>button{
-    background-color: #27e1b6;
+  }
+  .investLayout {
+    width: 330px;
+    flex-direction: column;
+  }
+  .investContent {
     width: 100%;
+  }
+
+  .bannerContent > p {
     margin-block: 1rem;
-    padding: .4rem;
-    border-radius: 7px;
-    border: none;
-    color: #fff;
-    font-size: 10px;
-    font: weight 600px; ;
-    text-transform: capitalize;
+  }
+
+  .moneyImg {
+    width: 70%;
+  }
+
+  .serviceOption {
+    width: 330px;
+    margin: auto;
+    flex-direction: column;
+  }
 }
